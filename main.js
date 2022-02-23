@@ -181,6 +181,9 @@ function leftTime() {
             } else {
                 gameOver.style.opacity = '1';
                 loseSfx.play();
+                setTimeout(function() {
+                    location.reload()
+                }, 2500)
             }
         }
     }, 1000)
