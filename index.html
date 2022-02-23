@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speedy</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+
+
+
+    <div class="container">
+
+        <!-- left -->
+        <div id="left">
+            <!-- img -->
+            <div class="img"><img class="logo" src="./logo.png"></div>
+
+            <div class="pop">
+                <div id="startBtn">START</div>
+            </div>
+            <div class="gameOver">
+                <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+                <lord-icon src="https://cdn.lordicon.com/inrunzby.json" trigger="loop" style="width:250px;height:250px; margin: 0px auto;">
+                </lord-icon>
+                <h1>Game Over</h1>
+
+            </div>
+            <div class="winer">
+                <div>
+
+                    <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+                    <lord-icon src="https://cdn.lordicon.com/tqywkdcz.json" trigger="loop" colors="primary:#4bb3fd,secondary:#ffc738,tertiary:#a35ac7,quaternary:#f9c9c0" style="width:250px;height:250px; margin-left: 6.5rem;">
+                    </lord-icon>
+
+                    <h1>Congratulations</h1>
+                    <h2>You are the winner</h2>
+
+                    <h5></h5>
+                </div>
+
+            </div>
+
+            <div class="word"></div>
+            <div class="input">
+                <input spellcheck="false" type="text" id="inp" autocomplete="off">
+            </div>
+            <div class="upComing">
+
+            </div>
+
+        </div>
+
+        <!-- right -->
+        <div id="right">
+            <!-- icon -->
+            <a class="icon" href="https://www.facebook.com/profile.php?id=100028876007672" target="blank">
+
+                <img src="./copyright.png" alt="facebook">
+            </a>
+
+
+            <div class="score">
+                Score : <span id="scoreNum">0</span> from 30
+            </div>
+
+            <div class="timer">
+                <h1>Time left</h1>
+                <h1 id="timeLeft">5</h1>
+                <h3>seconds</h3>
+            </div>
+
+            <div class="levels">
+
+                <div class="title">
+                    <h1>Difficulty</h1><i class="fa-solid fa-angle-right" id="lvlBtn"></i>
+                </div>
+
+                <div class="lvls">
+                    <div id="easy">Easy</div>
+                    <div id="normal">Normal</div>
+                    <div id="hard">Hard</div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
