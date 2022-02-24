@@ -123,6 +123,11 @@ startBtn.onclick = function() {
     easyBtn.style.pointerEvents = 'none';
     normalBtn.style.pointerEvents = 'none';
     hardBtn.style.pointerEvents = 'none';
+    programmingArr.style.pointerEvents = 'none';
+    randomArr.style.pointerEvents = 'none';
+    sportArr.style.pointerEvents = 'none';
+    moviesArr.style.pointerEvents = 'none';
+    scienceArr.style.pointerEvents = 'none';
 
 }
 
@@ -182,6 +187,9 @@ function leftTime() {
                     // show winer page
                     winerPage.style.opacity = "1";
                     winerPage.style.pointerEvents = "auto";
+                    setTimeout(function() {
+                        location.reload()
+                    }, 5000)
 
                 }
 
