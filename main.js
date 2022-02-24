@@ -188,3 +188,67 @@ function leftTime() {
         }
     }, 1000)
 }
+
+
+// change catogery
+let randomArr = document.querySelector("#left .con .randomArr");
+let programmingArr = document.querySelector("#left .con .programmingArr");
+let sportArr = document.querySelector("#left .con .sportArr");
+let moviesArr = document.querySelector("#left .con .moviesArr");
+let scienceArr = document.querySelector("#left .con .scienceArr");
+
+
+programmingArr.onclick = function() {
+    programmingArr.classList.add("catogryActive");
+    randomArr.classList.remove("catogryActive");
+    sportArr.classList.remove("catogryActive");
+    moviesArr.classList.remove("catogryActive");
+    scienceArr.classList.remove("catogryActive");
+    // the array
+    words = ['html', 'css', 'js', 'react', 'bootstrap', 'leetcode', 'codeforcec', 'python', 'data', 'computer', 'web', 'network', 'api', 'coding', 'semicolon', 'pugs', 'loops', 'functions', 'program', 'softwere', 'compiler', 'logic', 'compute', 'library', 'internet', 'technology', 'electronic', 'algorithm', 'information', 'php']
+
+
+}
+randomArr.onclick = function() {
+    randomArr.classList.add("catogryActive");
+    moviesArr.classList.reomve("catogryActive");
+    programmingArr.classList.remove("catogryActive");
+    sportArr.classList.remove("catogryActive");
+    scienceArr.classList.remove("catogryActive");
+    // the array
+    words = ['world', 'html', 'juice', 'funny', 'leetcode', 'hello', 'football', 'barcelona', 'javascript', 'ball', 'tv', 'games', 'mobile', 'basket', 'hole', 'moon', 'coding', 'screen', 'sun', 'cola', 'waves', 'codeforcec', 'skate', 'css', 'movies', 'egypt', 'icpc', 'programming', 'ice', 'cube']
+
+}
+sportArr.onclick = function() {
+    sportArr.classList.add("catogryActive");
+    randomArr.classList.remove("catogryActive");
+    moviesArr.classList.remove("catogryActive");
+    scienceArr.classList.remove("catogryActive");
+    programmingArr.classList.remove("catogryActive");
+    // the array
+    words = ['game', 'gym', 'rugby', 'messi', 'ronaldo', 'taem', 'polo', 'hocky', 'athletic', 'ball', 'judo', 'rowing', 'coach', 'basketball', 'vollyball', 'chess', 'challenge', 'olympic', 'kick', 'round', 'offside', 'sports', 'skate', 'bowling', 'bike', 'race', 'salah', 'player', 'fit', 'car']
+
+
+}
+moviesArr.onclick = function() {
+    moviesArr.classList.add("catogryActive");
+    randomArr.classList.remove("catogryActive");
+    sportArr.classList.remove("catogryActive");
+    programmingArr.classList.remove("catogryActive");
+    scienceArr.classList.remove("catogryActive");
+    // the array
+    words = ['movie', 'film', 'oscar', 'tv', 'actor', 'dvd', 'picture', 'soundtrack', 'show', 'video', 'animation', 'shot', 'director', 'episode', 'netflix', 'drama', 'action', 'horror', 'romantic', 'remake', 'hollywood', 'marvel', 'dc', 'avangers', 'batman', 'comic', 'comedy', 'reality', 'fantasy', 'hbo']
+
+
+}
+scienceArr.onclick = function() {
+    scienceArr.classList.add("catogryActive");
+    randomArr.classList.remove("catogryActive");
+    sportArr.classList.remove("catogryActive");
+    programmingArr.classList.remove("catogryActive");
+    moviesArr.classList.remove("catogryActive");
+    // the array
+    words = ['science', 'research', 'math', 'geology', 'physics', 'nature', 'tech', 'study', 'planet', 'books', 'abstract', 'statistics', 'facts', 'theory', 'energy', 'nano', 'stars', 'learning', 'lab', 'atom', 'electron', 'doctor', 'terms', 'robot', 'pluto', 'sun', 'matter', 'gas', 'telescope', 'chemical']
+
+
+}
