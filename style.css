@@ -43,6 +43,35 @@ body {
     position: relative;
 }
 
+#left .con {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#left .con div {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    transition: 0.4s;
+    padding: 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#left .con div:hover,
+.catogryActive {
+    background-color: #5a5e6c;
+    outline: 4px solid #2c2f3a;
+}
+
+#left .con div:not(:first-child) {
+    margin-left: 20px;
+}
+
 #left .pop {
     position: absolute;
     width: 100%;
