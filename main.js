@@ -62,26 +62,42 @@ timeLeft.innerHTML = defaultLevelSeconds;
 
 // change levels
 
+
+
+
 easyBtn.onclick = function() {
-
-}
-
-
-
-// change levels background
-if (defaultLevelName == 'easy') {
     document.getElementById("easy").classList.add("active");
     document.getElementById("normal").classList.remove("active");
     document.getElementById("hard").classList.remove("active");
-} else if (defaultLevelName == 'normal') {
+    defaultLevelName = "easy";
+    defaultLevelSeconds = levels[defaultLevelName];
+    timeLeft.innerHTML = defaultLevelSeconds;
+
+}
+normalBtn.onclick = function() {
     document.getElementById("easy").classList.remove("active");
     document.getElementById("normal").classList.add("active");
     document.getElementById("hard").classList.remove("active");
-} else if (defaultLevelName == 'hard') {
+    defaultLevelName = "normal";
+    defaultLevelSeconds = levels[defaultLevelName];
+    timeLeft.innerHTML = defaultLevelSeconds;
+
+}
+hardBtn.onclick = function() {
     document.getElementById("easy").classList.remove("active");
     document.getElementById("normal").classList.remove("active");
     document.getElementById("hard").classList.add("active");
+    defaultLevelName = "hard";
+    defaultLevelSeconds = levels[defaultLevelName];
+    timeLeft.innerHTML = defaultLevelSeconds;
+
 }
+
+
+
+
+
+
 
 
 
@@ -103,6 +119,11 @@ startBtn.onclick = function() {
     inp.focus();
     // generate the word
     genWord();
+    // off the levels
+    easyBtn.style.pointerEvents = 'none';
+    normalBtn.style.pointerEvents = 'none';
+    hardBtn.style.pointerEvents = 'none';
+
 }
 
 
