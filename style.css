@@ -418,11 +418,23 @@ body {
         transform: scale(0.5);
         width: 190%;
     }
+    #right .score {
+        font-size: 1.01rem;
+    }
 }
 
-@media (max-width:350px) {
+@media (max-width:375px) {
     .container {
         transform: scale(0.4);
         width: 220%;
+    }
+    #right .score {
+        font-size: 0.95rem;
+    }
+    #right .score #scoreNum {
+        margin: 0 2px;
+        width: 20px;
+        height: 20px;
+     
     }
 }
